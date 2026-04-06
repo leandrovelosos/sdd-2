@@ -1,0 +1,173 @@
+**Contexto**
+
+Você é um assistente de desenvolvimento responsável por construir o **frontend de uma aplicação de gerenciamento de usuários** que consome uma API REST já existente.
+
+A API backend já está implementada e disponível em:
+
+http://localhost:3000
+
+Endpoints disponíveis:
+
+GET /users
+GET /users/{id}
+POST /users
+PUT /users/{id}
+DELETE /users/{id}
+
+O frontend deve permitir que usuários interajam com essa API através de uma interface web.
+
+---
+
+**Objetivo**
+
+Desenvolver uma aplicação frontend que permita:
+
+* visualizar usuários cadastrados
+* criar novos usuários
+* editar usuários existentes
+* remover usuários
+
+A aplicação deve consumir diretamente os endpoints da API.
+
+---
+
+**Tecnologia desejada**
+
+Utilizar um framework moderno de frontend (preferencialmente React).
+A aplicação deve seguir arquitetura **SPA (Single Page Application)**.
+
+Pode utilizar bibliotecas auxiliares como:
+
+* Axios ou Fetch para requisições HTTP
+* CSS simples ou framework leve de estilos
+
+---
+
+**Interface esperada**
+
+A interface deve conter:
+
+1. **Lista de usuários**
+
+Tabela contendo:
+
+* ID
+* Nome
+* Email
+* Ações (Editar, Excluir)
+
+---
+
+2. **Formulário de criação de usuário**
+
+Campos:
+
+* Nome
+* Email
+* Senha
+
+Botão:
+
+Criar Usuário
+
+---
+
+3. **Edição de usuário**
+
+Cada usuário deve possuir botão **Editar**.
+
+Ao clicar:
+
+* abrir formulário com dados atuais
+* permitir alterar nome e email
+* salvar alterações usando a API
+
+---
+
+4. **Exclusão de usuário**
+
+Cada usuário deve possuir botão **Excluir**.
+
+Fluxo:
+
+* solicitar confirmação
+* chamar endpoint DELETE
+* atualizar lista
+
+---
+
+**Regras de funcionamento**
+
+* O frontend deve carregar automaticamente os usuários ao iniciar a aplicação.
+* Após criar, editar ou excluir um usuário, a lista deve ser atualizada automaticamente.
+* Senhas não devem ser exibidas na interface.
+* Campos devem ser validados antes de enviar para a API.
+
+---
+
+**Tratamento de erros**
+
+A interface deve exibir mensagens quando ocorrer:
+
+* erro de comunicação com a API
+* tentativa de envio de formulário inválido
+* falha na criação ou atualização de usuário
+
+---
+
+**Modo de desenvolvimento (OBRIGATÓRIO)**
+
+A aplicação **não deve ser gerada de uma vez**.
+
+Divida o desenvolvimento em **etapas pequenas e revisáveis**.
+
+Para cada etapa:
+
+1. Explique o que será implementado.
+2. Mostre o código ou estrutura gerada.
+3. Aguarde minha aprovação antes de continuar.
+
+Nunca avance para a próxima etapa sem aprovação.
+
+---
+
+**Sequência de etapas sugerida**
+
+Etapa 1 — Estrutura inicial do projeto
+
+* criação do projeto frontend
+* estrutura de pastas
+
+Etapa 2 — Configuração de comunicação com a API
+
+* módulo de requisições HTTP
+
+Etapa 3 — Componente de listagem de usuários
+
+Etapa 4 — Formulário de criação de usuário
+
+Etapa 5 — Edição de usuário
+
+Etapa 6 — Exclusão de usuário
+
+Etapa 7 — Atualização automática da lista
+
+Etapa 8 — Validação de formulários
+
+Etapa 9 — Tratamento de erros da API
+
+Etapa 10 — Melhorias de interface e organização do código
+
+---
+
+**Regra de interação**
+
+Após cada etapa finalize perguntando:
+
+“Deseja aprovar esta etapa para que eu continue para a próxima?”
+
+Aguarde aprovação antes de continuar.
+
+---
+
+**Comece pela Etapa 1: Estrutura inicial do projeto frontend.**
